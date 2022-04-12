@@ -11,54 +11,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet"><title>Sign Up Form</title>
 </head>
 <body>
-    <div class="form-container">
-        <div class="image-panel">
-            <div class="logo">
-                <img src="bee-logo.svg" height="90px">
-                <h1>Bumble Blog</h1>
-            </div>
-            <div class="credits">
-                <p>Photo by <a href="https://unsplash.com/@a_cat" target="_blank" class="credit-link">Carolina</a></p>
-                <p>Icon by <a href="https://thenounproject.com/dewadesign.net/" target="_blank" class="credit-link">dewadesign</a></p>
-            </div>
-        </div>
-        <div class="form-panel">
-            <h1>Want to join the conversation? Sign up now!</h1>
-            
-            <form action="">
-                <div class="form">
-                    <div>
-                        <label for="first_name">FIRST NAME:</label>
-                        <input type="text" name="first_name" placeholder="Jane" id="first_name" required>
-                    </div>
-                    <div>
-                        <label for="last_name">LAST NAME:</label>
-                        <input type="text" name="first_name" placeholder="Doe" id="last_name" required>
-                    </div>
-                    <div>
-                        <label for="email">EMAIL:</label>
-                        <input type="email" name="email" placeholder="example@email.com" id="email" required>
-                    </div>
-                    <div>
-                        <label for="phone">PHONE NUMBER:</label>
-                        <input type="tel" placeholder="000-000-0000" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                    </div>
-                    <div>
-                        <label for="password">PASSWORD:</label>
-                        <input type="password" id="password" required>
-                    </div>
-                    <div>
-                        <label for="confirm_password">CONFIRM PASSWORD:</label>
-                        <input type="password" id="confirm_password" required>
-                    </div>
+    <div id="main">
+        <div class="form-container">
+            <div class="image-panel">
+                <div class="logo">
+                    <img src="bee-logo.svg" height="90px">
+                    <h1>Bumble Blog</h1>
                 </div>
-                <button type="submit" class="submit-btn">Create Account</button>
-            </form>
+                <div class="credits">
+                    <p>Photo by <a href="https://unsplash.com/@a_cat" target="_blank" class="credit-link">Carolina</a></p>
+                    <p>Icon by <a href="https://thenounproject.com/dewadesign.net/" target="_blank" class="credit-link">dewadesign</a></p>
+                </div>
+            </div>
+            <div class="form-panel">
+                <h1>Want to join the conversation? Sign up now!</h1>
+                
+                <form action="">
+                    <div class="form">
+                        <div>
+                            <label for="first_name"><span class="required">*</span> FIRST NAME:</label>
+                            <input type="text" name="first_name" placeholder="Jane" id="first_name" required>
+                        </div>
+                        <div>
+                            <label for="last_name"><span class="required">*</span> LAST NAME:</label>
+                            <input type="text" name="first_name" placeholder="Doe" id="last_name" required>
+                        </div>
+                        <div>
+                            <label for="email"><span class="required">*</span> EMAIL:</label>
+                            <input type="email" name="email" placeholder="example@email.com" id="email" required>
+                        </div>
+                        <div>
+                            <label for="phone">PHONE NUMBER:</label>
+                            <input type="tel" placeholder="000-000-0000" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        </div>
+                        <div>
+                            <label for="password"><span class="required">*</span> PASSWORD:</label>
+                            <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
+                            <div class="requirements">
+                                Your password must be at least 6 characters and contain at least one uppercase, one lowercase, and one number.
+                            </div>
+                        </div>
+                        <div>
+                            <label for="confirm_password"><span class="required">*</span> CONFIRM PASSWORD:</label>
+                            <input type="password" id="confirm_password" required>
+                            
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">Create Account</button>
+                </form>
 
-            <p>Already have an account? <a href="" class="login-link">Log in</a></p>
-            
+                <p>Already have an account? <a href="" class="login-link">Log in</a></p>
+                
+            </div>
         </div>
     </div>
-
+    <div id="footer">
+        <p>Code by kbousquet<a href="https://github.com/kbousquet/sign-up-form"> <img src="GitHubIcon.png" alt="Git Hub icon" height="20"></a></p>
+    </div>
 </body>
 </html>
