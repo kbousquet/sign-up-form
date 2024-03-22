@@ -7,6 +7,7 @@ This project is for practice of intermediate HTML and CSS. Click [here](https://
 * More experience using Flexbox
 * Learned the basics of HTML forms and validation
 
+![image](https://github.com/kbousquet/sign-up-form/assets/72675497/b5fb4f40-eed5-4282-8fe4-0540a232793f)
 
 Image created by [Carolina](https://unsplash.com/@a_cat) on Unsplash.
 
